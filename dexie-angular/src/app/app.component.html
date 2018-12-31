@@ -1,0 +1,9 @@
+<div>
+  <h1>Angular 7 + Dexie Todo</h1>
+  <app-add-todo (addTodo)="onAddTodo($event)"></app-add-todo>
+  <app-todo-list
+    [todos]="todosList"
+    (toggleTodo)="onToggleTodo($event)"
+    (deleteTodo)="onDeleteTodo($event)">
+  </app-todo-list>
+</div>
